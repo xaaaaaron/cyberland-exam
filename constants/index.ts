@@ -1,1 +1,3 @@
-export const API_KEY = 'fd14b707';
+import Config from 'react-native-config';
+
+export const API_KEY = Config.API_KEY;
