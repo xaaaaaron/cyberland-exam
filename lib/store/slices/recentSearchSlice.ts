@@ -44,4 +44,3 @@ export const { addSearch, removeSearch, clearSearches } =
   recentSearchSlice.actions;
 
 export default recentSearchSlice.reducer;
-``;

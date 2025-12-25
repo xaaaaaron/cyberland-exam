@@ -94,7 +94,12 @@ export const MovieDetails = ({ route }: { route: Route }) => {
       />
 
       {/* CONTENT */}
-      <MovieDetailsContent plot={data.Plot} ratings={data.Ratings} />
+      <MovieDetailsContent
+        plot={data.Plot}
+        ratings={data.Ratings}
+        cast={data.Actors}
+        imdbRating={data.imdbRating}
+      />
     </ScrollView>
   );
 };
