@@ -29,7 +29,7 @@ export const SearchScreen = () => {
 
   const debouncedSearch = useDebounce(value);
 
-  const { data } = useGetMovieList(debouncedSearch || undefined);
+  const { data } = useGetMovieList({ search: debouncedSearch || undefined });
 
   const movies = useMemo(
     () => data?.pages.flatMap(page => page.Search ?? []) ?? [],
